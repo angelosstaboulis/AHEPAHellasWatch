@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6605AAB2653C62D00D4FD7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AAA2653C62D00D4FD7F /* AppDelegate.swift */; };
+		D6605AAD2653C62D00D4FD7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AAC2653C62D00D4FD7F /* SceneDelegate.swift */; };
+		D6605AAF2653C62D00D4FD7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AAE2653C62D00D4FD7F /* ViewController.swift */; };
+		D6605AB22653C62D00D4FD7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6605AB02653C62D00D4FD7F /* Main.storyboard */; };
+		D6605AB42653C62F00D4FD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6605AB32653C62F00D4FD7F /* Assets.xcassets */; };
+		D6605AB72653C62F00D4FD7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6605AB52653C62F00D4FD7F /* LaunchScreen.storyboard */; };
+		D6605AC22653C62F00D4FD7F /* AHEPAHellasWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AC12653C62F00D4FD7F /* AHEPAHellasWatchTests.swift */; };
+		D6605ACD2653C63000D4FD7F /* AHEPAHellasWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605ACC2653C63000D4FD7F /* AHEPAHellasWatchUITests.swift */; };
+		D6605AD22653C63000D4FD7F /* AHEPAHellasWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6605AD12653C63000D4FD7F /* AHEPAHellasWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6605AD82653C63000D4FD7F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6605AD62653C63000D4FD7F /* Interface.storyboard */; };
+		D6605ADA2653C63100D4FD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6605AD92653C63100D4FD7F /* Assets.xcassets */; };
+		D6605AE12653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6605AE02653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6605AE62653C63100D4FD7F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AE52653C63100D4FD7F /* InterfaceController.swift */; };
+		D6605AE82653C63100D4FD7F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AE72653C63100D4FD7F /* ExtensionDelegate.swift */; };
+		D6605AEA2653C63100D4FD7F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AE92653C63100D4FD7F /* NotificationController.swift */; };
+		D6605AEC2653C63100D4FD7F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605AEB2653C63100D4FD7F /* ComplicationController.swift */; };
+		D6605AEE2653C63200D4FD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6605AED2653C63200D4FD7F /* Assets.xcassets */; };
+		D6605B0A2653E21800D4FD7F /* AHEPANewsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605B092653E21800D4FD7F /* AHEPANewsInterfaceController.swift */; };
+		D6605B192653EBC200D4FD7F /* AHEPARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605B182653EBC200D4FD7F /* AHEPARow.swift */; };
+		D6605B212653F56E00D4FD7F /* RssList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605B202653F56E00D4FD7F /* RssList.swift */; };
+		D6605B292653F63700D4FD7F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605B282653F63700D4FD7F /* APIManager.swift */; };
+		D6605B362653F75F00D4FD7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D6605B352653F75F00D4FD7F /* Alamofire */; };
+		D6605B3E2653F7A400D4FD7F /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = D6605B3D2653F7A400D4FD7F /* SWXMLHash */; };
+		D6605B712653FD7A00D4FD7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D6605B702653FD7A00D4FD7F /* Alamofire */; };
+		D6605B732653FD7A00D4FD7F /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = D6605B722653FD7A00D4FD7F /* SWXMLHash */; };
+		D6605B7A265400B800D4FD7F /* AHEPANewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6605B79265400B700D4FD7F /* AHEPANewsViewModel.swift */; };
+		D6605B99265401B800D4FD7F /* APIManager.swift in Resources */ = {isa = PBXBuildFile; fileRef = D6605B282653F63700D4FD7F /* APIManager.swift */; };
+		D6605B9A265401B800D4FD7F /* RssList.swift in Resources */ = {isa = PBXBuildFile; fileRef = D6605B202653F56E00D4FD7F /* RssList.swift */; };
+		D66B1D37265470F700DAB654 /* AHEPAFindUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B1D36265470F700DAB654 /* AHEPAFindUs.swift */; };
+		D66B1D40265478F100DAB654 /* AHEPAChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B1D3F265478F100DAB654 /* AHEPAChapters.swift */; };
+		D66B1D4726547A5C00DAB654 /* AHEPAChapterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B1D4626547A5C00DAB654 /* AHEPAChapterRow.swift */; };
+		D66B1D5426547DB600DAB654 /* AHEPAHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B1D5326547DB600DAB654 /* AHEPAHistory.swift */; };
+		D66B1D70265485AC00DAB654 /* history.mov in Resources */ = {isa = PBXBuildFile; fileRef = D66B1D6F265485AC00DAB654 /* history.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6605ABE2653C62F00D4FD7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6605A9F2653C62D00D4FD7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6605AA62653C62D00D4FD7F;
+			remoteInfo = AHEPAHellasWatch;
+		};
+		D6605AC92653C63000D4FD7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6605A9F2653C62D00D4FD7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6605AA62653C62D00D4FD7F;
+			remoteInfo = AHEPAHellasWatch;
+		};
+		D6605AD32653C63000D4FD7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6605A9F2653C62D00D4FD7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6605AD02653C63000D4FD7F;
+			remoteInfo = "AHEPAHellasWatch WatchKit App";
+		};
+		D6605AE22653C63100D4FD7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6605A9F2653C62D00D4FD7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6605ADF2653C63100D4FD7F;
+			remoteInfo = "AHEPAHellasWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6605AF62653C63200D4FD7F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6605AE12653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605AFA2653C63200D4FD7F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D6605AD22653C63000D4FD7F /* AHEPAHellasWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D6605AA72653C62D00D4FD7F /* AHEPAHellasWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHEPAHellasWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6605AAA2653C62D00D4FD7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6605AAC2653C62D00D4FD7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D6605AAE2653C62D00D4FD7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6605AB12653C62D00D4FD7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6605AB32653C62F00D4FD7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6605AB62653C62F00D4FD7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6605AB82653C62F00D4FD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6605ABD2653C62F00D4FD7F /* AHEPAHellasWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHEPAHellasWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6605AC12653C62F00D4FD7F /* AHEPAHellasWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAHellasWatchTests.swift; sourceTree = "<group>"; };
+		D6605AC32653C62F00D4FD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6605AC82653C62F00D4FD7F /* AHEPAHellasWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHEPAHellasWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6605ACC2653C63000D4FD7F /* AHEPAHellasWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAHellasWatchUITests.swift; sourceTree = "<group>"; };
+		D6605ACE2653C63000D4FD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6605AD12653C63000D4FD7F /* AHEPAHellasWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AHEPAHellasWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6605AD72653C63000D4FD7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D6605AD92653C63100D4FD7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6605ADB2653C63100D4FD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6605AE02653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AHEPAHellasWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6605AE52653C63100D4FD7F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D6605AE72653C63100D4FD7F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D6605AE92653C63100D4FD7F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D6605AEB2653C63100D4FD7F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D6605AED2653C63200D4FD7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6605AEF2653C63200D4FD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6605AF02653C63200D4FD7F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D6605B092653E21800D4FD7F /* AHEPANewsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPANewsInterfaceController.swift; sourceTree = "<group>"; };
+		D6605B182653EBC200D4FD7F /* AHEPARow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPARow.swift; sourceTree = "<group>"; };
+		D6605B202653F56E00D4FD7F /* RssList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssList.swift; sourceTree = "<group>"; };
+		D6605B282653F63700D4FD7F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D6605B79265400B700D4FD7F /* AHEPANewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPANewsViewModel.swift; sourceTree = "<group>"; };
+		D66B1D36265470F700DAB654 /* AHEPAFindUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAFindUs.swift; sourceTree = "<group>"; };
+		D66B1D3F265478F100DAB654 /* AHEPAChapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAChapters.swift; sourceTree = "<group>"; };
+		D66B1D4626547A5C00DAB654 /* AHEPAChapterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAChapterRow.swift; sourceTree = "<group>"; };
+		D66B1D5326547DB600DAB654 /* AHEPAHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAHistory.swift; sourceTree = "<group>"; };
+		D66B1D5F26547E7800DAB654 /* history.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = history.mp4; sourceTree = "<group>"; };
+		D66B1D6F265485AC00DAB654 /* history.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = history.mov; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6605AA42653C62D00D4FD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605B3E2653F7A400D4FD7F /* SWXMLHash in Frameworks */,
+				D6605B362653F75F00D4FD7F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605ABA2653C62F00D4FD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605AC52653C62F00D4FD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605ADD2653C63100D4FD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605B732653FD7A00D4FD7F /* SWXMLHash in Frameworks */,
+				D6605B712653FD7A00D4FD7F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6605A9E2653C62C00D4FD7F = {
+			isa = PBXGroup;
+			children = (
+				D6605AA92653C62D00D4FD7F /* AHEPAHellasWatch */,
+				D6605AC02653C62F00D4FD7F /* AHEPAHellasWatchTests */,
+				D6605ACB2653C63000D4FD7F /* AHEPAHellasWatchUITests */,
+				D6605AD52653C63000D4FD7F /* AHEPAHellasWatch WatchKit App */,
+				D6605AE42653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension */,
+				D6605AA82653C62D00D4FD7F /* Products */,
+				D6605B6F2653FD7A00D4FD7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6605AA82653C62D00D4FD7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6605AA72653C62D00D4FD7F /* AHEPAHellasWatch.app */,
+				D6605ABD2653C62F00D4FD7F /* AHEPAHellasWatchTests.xctest */,
+				D6605AC82653C62F00D4FD7F /* AHEPAHellasWatchUITests.xctest */,
+				D6605AD12653C63000D4FD7F /* AHEPAHellasWatch WatchKit App.app */,
+				D6605AE02653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6605AA92653C62D00D4FD7F /* AHEPAHellasWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D6605AAA2653C62D00D4FD7F /* AppDelegate.swift */,
+				D6605AAC2653C62D00D4FD7F /* SceneDelegate.swift */,
+				D6605AAE2653C62D00D4FD7F /* ViewController.swift */,
+				D6605AB02653C62D00D4FD7F /* Main.storyboard */,
+				D6605AB32653C62F00D4FD7F /* Assets.xcassets */,
+				D6605AB52653C62F00D4FD7F /* LaunchScreen.storyboard */,
+				D6605AB82653C62F00D4FD7F /* Info.plist */,
+			);
+			path = AHEPAHellasWatch;
+			sourceTree = "<group>";
+		};
+		D6605AC02653C62F00D4FD7F /* AHEPAHellasWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6605AC12653C62F00D4FD7F /* AHEPAHellasWatchTests.swift */,
+				D6605AC32653C62F00D4FD7F /* Info.plist */,
+			);
+			path = AHEPAHellasWatchTests;
+			sourceTree = "<group>";
+		};
+		D6605ACB2653C63000D4FD7F /* AHEPAHellasWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6605ACC2653C63000D4FD7F /* AHEPAHellasWatchUITests.swift */,
+				D6605ACE2653C63000D4FD7F /* Info.plist */,
+			);
+			path = AHEPAHellasWatchUITests;
+			sourceTree = "<group>";
+		};
+		D6605AD52653C63000D4FD7F /* AHEPAHellasWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D6605AD62653C63000D4FD7F /* Interface.storyboard */,
+				D6605AD92653C63100D4FD7F /* Assets.xcassets */,
+				D6605ADB2653C63100D4FD7F /* Info.plist */,
+			);
+			path = "AHEPAHellasWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		D6605AE42653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D66B1D6F265485AC00DAB654 /* history.mov */,
+				D66B1D5F26547E7800DAB654 /* history.mp4 */,
+				D66B1D1E26546C9400DAB654 /* Model */,
+				D66B1D1D26546C8800DAB654 /* APIManager */,
+				D6605B172653EBA800D4FD7F /* View */,
+				D6605B102653EA2F00D4FD7F /* Controllers */,
+				D6605AE52653C63100D4FD7F /* InterfaceController.swift */,
+				D6605AE72653C63100D4FD7F /* ExtensionDelegate.swift */,
+				D6605AE92653C63100D4FD7F /* NotificationController.swift */,
+				D6605AEB2653C63100D4FD7F /* ComplicationController.swift */,
+				D6605AED2653C63200D4FD7F /* Assets.xcassets */,
+				D6605AEF2653C63200D4FD7F /* Info.plist */,
+			);
+			path = "AHEPAHellasWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D6605B102653EA2F00D4FD7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D66B1D5226547D9600DAB654 /* AHEPAHistory */,
+				D66B1D3E265478D800DAB654 /* AHEPAChapters */,
+				D66B1D242654705D00DAB654 /* AHEPAFindUs */,
+				D6605B112653EA3B00D4FD7F /* AHEPANews */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D6605B112653EA3B00D4FD7F /* AHEPANews */ = {
+			isa = PBXGroup;
+			children = (
+				D6605AF02653C63200D4FD7F /* PushNotificationPayload.apns */,
+				D6605B092653E21800D4FD7F /* AHEPANewsInterfaceController.swift */,
+				D6605B79265400B700D4FD7F /* AHEPANewsViewModel.swift */,
+			);
+			path = AHEPANews;
+			sourceTree = "<group>";
+		};
+		D6605B172653EBA800D4FD7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6605B182653EBC200D4FD7F /* AHEPARow.swift */,
+				D66B1D4626547A5C00DAB654 /* AHEPAChapterRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6605B6F2653FD7A00D4FD7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D66B1D1D26546C8800DAB654 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6605B282653F63700D4FD7F /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		D66B1D1E26546C9400DAB654 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6605B202653F56E00D4FD7F /* RssList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D66B1D242654705D00DAB654 /* AHEPAFindUs */ = {
+			isa = PBXGroup;
+			children = (
+				D66B1D36265470F700DAB654 /* AHEPAFindUs.swift */,
+			);
+			path = AHEPAFindUs;
+			sourceTree = "<group>";
+		};
+		D66B1D3E265478D800DAB654 /* AHEPAChapters */ = {
+			isa = PBXGroup;
+			children = (
+				D66B1D3F265478F100DAB654 /* AHEPAChapters.swift */,
+			);
+			path = AHEPAChapters;
+			sourceTree = "<group>";
+		};
+		D66B1D5226547D9600DAB654 /* AHEPAHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D66B1D5326547DB600DAB654 /* AHEPAHistory.swift */,
+			);
+			path = AHEPAHistory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6605AA62653C62D00D4FD7F /* AHEPAHellasWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6605AFB2653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatch" */;
+			buildPhases = (
+				D6605AA32653C62D00D4FD7F /* Sources */,
+				D6605AA42653C62D00D4FD7F /* Frameworks */,
+				D6605AA52653C62D00D4FD7F /* Resources */,
+				D6605AFA2653C63200D4FD7F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6605AD42653C63000D4FD7F /* PBXTargetDependency */,
+			);
+			name = AHEPAHellasWatch;
+			packageProductDependencies = (
+				D6605B352653F75F00D4FD7F /* Alamofire */,
+				D6605B3D2653F7A400D4FD7F /* SWXMLHash */,
+			);
+			productName = AHEPAHellasWatch;
+			productReference = D6605AA72653C62D00D4FD7F /* AHEPAHellasWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6605ABC2653C62F00D4FD7F /* AHEPAHellasWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6605AFE2653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatchTests" */;
+			buildPhases = (
+				D6605AB92653C62F00D4FD7F /* Sources */,
+				D6605ABA2653C62F00D4FD7F /* Frameworks */,
+				D6605ABB2653C62F00D4FD7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6605ABF2653C62F00D4FD7F /* PBXTargetDependency */,
+			);
+			name = AHEPAHellasWatchTests;
+			productName = AHEPAHellasWatchTests;
+			productReference = D6605ABD2653C62F00D4FD7F /* AHEPAHellasWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6605AC72653C62F00D4FD7F /* AHEPAHellasWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6605B012653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatchUITests" */;
+			buildPhases = (
+				D6605AC42653C62F00D4FD7F /* Sources */,
+				D6605AC52653C62F00D4FD7F /* Frameworks */,
+				D6605AC62653C62F00D4FD7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6605ACA2653C63000D4FD7F /* PBXTargetDependency */,
+			);
+			name = AHEPAHellasWatchUITests;
+			productName = AHEPAHellasWatchUITests;
+			productReference = D6605AC82653C62F00D4FD7F /* AHEPAHellasWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D6605AD02653C63000D4FD7F /* AHEPAHellasWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6605AF72653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatch WatchKit App" */;
+			buildPhases = (
+				D6605ACF2653C63000D4FD7F /* Resources */,
+				D6605AF62653C63200D4FD7F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6605AE32653C63100D4FD7F /* PBXTargetDependency */,
+			);
+			name = "AHEPAHellasWatch WatchKit App";
+			productName = "AHEPAHellasWatch WatchKit App";
+			productReference = D6605AD12653C63000D4FD7F /* AHEPAHellasWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D6605ADF2653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6605AF32653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatch WatchKit Extension" */;
+			buildPhases = (
+				D6605ADC2653C63100D4FD7F /* Sources */,
+				D6605ADD2653C63100D4FD7F /* Frameworks */,
+				D6605ADE2653C63100D4FD7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6605B5D2653FCE100D4FD7F /* PBXTargetDependency */,
+				D6605B5F2653FCE100D4FD7F /* PBXTargetDependency */,
+			);
+			name = "AHEPAHellasWatch WatchKit Extension";
+			packageProductDependencies = (
+				D6605B702653FD7A00D4FD7F /* Alamofire */,
+				D6605B722653FD7A00D4FD7F /* SWXMLHash */,
+			);
+			productName = "AHEPAHellasWatch WatchKit Extension";
+			productReference = D6605AE02653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6605A9F2653C62D00D4FD7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D6605AA62653C62D00D4FD7F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D6605ABC2653C62F00D4FD7F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D6605AA62653C62D00D4FD7F;
+					};
+					D6605AC72653C62F00D4FD7F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D6605AA62653C62D00D4FD7F;
+					};
+					D6605AD02653C63000D4FD7F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D6605ADF2653C63100D4FD7F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = D6605AA22653C62D00D4FD7F /* Build configuration list for PBXProject "AHEPAHellasWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6605A9E2653C62C00D4FD7F;
+			packageReferences = (
+				D6605B342653F75F00D4FD7F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D6605B3C2653F7A400D4FD7F /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
+			productRefGroup = D6605AA82653C62D00D4FD7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6605AA62653C62D00D4FD7F /* AHEPAHellasWatch */,
+				D6605ABC2653C62F00D4FD7F /* AHEPAHellasWatchTests */,
+				D6605AC72653C62F00D4FD7F /* AHEPAHellasWatchUITests */,
+				D6605AD02653C63000D4FD7F /* AHEPAHellasWatch WatchKit App */,
+				D6605ADF2653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6605AA52653C62D00D4FD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605AB72653C62F00D4FD7F /* LaunchScreen.storyboard in Resources */,
+				D6605AB42653C62F00D4FD7F /* Assets.xcassets in Resources */,
+				D6605AB22653C62D00D4FD7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605ABB2653C62F00D4FD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605AC62653C62F00D4FD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605ACF2653C63000D4FD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605ADA2653C63100D4FD7F /* Assets.xcassets in Resources */,
+				D6605AD82653C63000D4FD7F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605ADE2653C63100D4FD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605B99265401B800D4FD7F /* APIManager.swift in Resources */,
+				D66B1D70265485AC00DAB654 /* history.mov in Resources */,
+				D6605B9A265401B800D4FD7F /* RssList.swift in Resources */,
+				D6605AEE2653C63200D4FD7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6605AA32653C62D00D4FD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605AAF2653C62D00D4FD7F /* ViewController.swift in Sources */,
+				D6605AAB2653C62D00D4FD7F /* AppDelegate.swift in Sources */,
+				D6605AAD2653C62D00D4FD7F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605AB92653C62F00D4FD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605AC22653C62F00D4FD7F /* AHEPAHellasWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605AC42653C62F00D4FD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605ACD2653C63000D4FD7F /* AHEPAHellasWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6605ADC2653C63100D4FD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6605B7A265400B800D4FD7F /* AHEPANewsViewModel.swift in Sources */,
+				D6605B292653F63700D4FD7F /* APIManager.swift in Sources */,
+				D66B1D37265470F700DAB654 /* AHEPAFindUs.swift in Sources */,
+				D66B1D40265478F100DAB654 /* AHEPAChapters.swift in Sources */,
+				D6605B192653EBC200D4FD7F /* AHEPARow.swift in Sources */,
+				D6605AEA2653C63100D4FD7F /* NotificationController.swift in Sources */,
+				D6605AEC2653C63100D4FD7F /* ComplicationController.swift in Sources */,
+				D6605AE82653C63100D4FD7F /* ExtensionDelegate.swift in Sources */,
+				D6605AE62653C63100D4FD7F /* InterfaceController.swift in Sources */,
+				D6605B0A2653E21800D4FD7F /* AHEPANewsInterfaceController.swift in Sources */,
+				D66B1D4726547A5C00DAB654 /* AHEPAChapterRow.swift in Sources */,
+				D66B1D5426547DB600DAB654 /* AHEPAHistory.swift in Sources */,
+				D6605B212653F56E00D4FD7F /* RssList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6605ABF2653C62F00D4FD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6605AA62653C62D00D4FD7F /* AHEPAHellasWatch */;
+			targetProxy = D6605ABE2653C62F00D4FD7F /* PBXContainerItemProxy */;
+		};
+		D6605ACA2653C63000D4FD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6605AA62653C62D00D4FD7F /* AHEPAHellasWatch */;
+			targetProxy = D6605AC92653C63000D4FD7F /* PBXContainerItemProxy */;
+		};
+		D6605AD42653C63000D4FD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6605AD02653C63000D4FD7F /* AHEPAHellasWatch WatchKit App */;
+			targetProxy = D6605AD32653C63000D4FD7F /* PBXContainerItemProxy */;
+		};
+		D6605AE32653C63100D4FD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6605ADF2653C63100D4FD7F /* AHEPAHellasWatch WatchKit Extension */;
+			targetProxy = D6605AE22653C63100D4FD7F /* PBXContainerItemProxy */;
+		};
+		D6605B5D2653FCE100D4FD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D6605B5C2653FCE100D4FD7F /* Alamofire */;
+		};
+		D6605B5F2653FCE100D4FD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D6605B5E2653FCE100D4FD7F /* SWXMLHash */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6605AB02653C62D00D4FD7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6605AB12653C62D00D4FD7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6605AB52653C62F00D4FD7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6605AB62653C62F00D4FD7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6605AD62653C63000D4FD7F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6605AD72653C63000D4FD7F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6605AF12653C63200D4FD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6605AF22653C63200D4FD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D6605AF42653C63200D4FD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = "AHEPAHellasWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		D6605AF52653C63200D4FD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = "AHEPAHellasWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		D6605AF82653C63200D4FD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				IBSC_MODULE = AHEPAHellasWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "AHEPAHellasWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		D6605AF92653C63200D4FD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				IBSC_MODULE = AHEPAHellasWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "AHEPAHellasWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		D6605AFC2653C63200D4FD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				INFOPLIST_FILE = AHEPAHellasWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6605AFD2653C63200D4FD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
+				INFOPLIST_FILE = AHEPAHellasWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6605AFF2653C63200D4FD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHEPAHellasWatch.app/AHEPAHellasWatch";
+			};
+			name = Debug;
+		};
+		D6605B002653C63200D4FD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHEPAHellasWatch.app/AHEPAHellasWatch";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6605B022653C63200D4FD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasWatchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AHEPAHellasWatch;
+			};
+			name = Debug;
+		};
+		D6605B032653C63200D4FD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasWatchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AHEPAHellasWatch;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6605AA22653C62D00D4FD7F /* Build configuration list for PBXProject "AHEPAHellasWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6605AF12653C63200D4FD7F /* Debug */,
+				D6605AF22653C63200D4FD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6605AF32653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6605AF42653C63200D4FD7F /* Debug */,
+				D6605AF52653C63200D4FD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6605AF72653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6605AF82653C63200D4FD7F /* Debug */,
+				D6605AF92653C63200D4FD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6605AFB2653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6605AFC2653C63200D4FD7F /* Debug */,
+				D6605AFD2653C63200D4FD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6605AFE2653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6605AFF2653C63200D4FD7F /* Debug */,
+				D6605B002653C63200D4FD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6605B012653C63200D4FD7F /* Build configuration list for PBXNativeTarget "AHEPAHellasWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6605B022653C63200D4FD7F /* Debug */,
+				D6605B032653C63200D4FD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6605B342653F75F00D4FD7F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		D6605B3C2653F7A400D4FD7F /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6605B352653F75F00D4FD7F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6605B342653F75F00D4FD7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D6605B3D2653F7A400D4FD7F /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6605B3C2653F7A400D4FD7F /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		D6605B5C2653FCE100D4FD7F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6605B342653F75F00D4FD7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D6605B5E2653FCE100D4FD7F /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6605B3C2653F7A400D4FD7F /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		D6605B702653FD7A00D4FD7F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6605B342653F75F00D4FD7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D6605B722653FD7A00D4FD7F /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6605B3C2653F7A400D4FD7F /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D6605A9F2653C62D00D4FD7F /* Project object */;
+}

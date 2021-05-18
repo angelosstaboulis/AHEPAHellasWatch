@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AHEPAHellasWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="242" alignment="center" backgroundImage="background" layout="vertical" id="18x-pa-Bih">
+                            <items>
+                                <imageView width="57" height="50" alignment="center" image="ahepalogo" contentMode="scaleAspectFit" id="qlL-kL-zV8"/>
+                                <button width="1" alignment="left" title="AHEPA News" id="NgW-2n-7Wd">
+                                    <connections>
+                                        <segue destination="0wC-F0-9EU" kind="push" id="DPv-TZ-3v4"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="AHEPA Finds Us" id="6yU-wz-wnp">
+                                    <connections>
+                                        <segue destination="Qwq-z0-x3F" kind="push" id="TdW-oC-x9c"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="AHEPA Chapters" id="EEt-eD-mPb">
+                                    <connections>
+                                        <segue destination="Ayu-j7-Z1V" kind="push" id="eAL-XM-Q7W"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="AHEPA History" id="Ws0-5u-ud6">
+                                    <connections>
+                                        <segue destination="Kd7-qe-YxL" kind="push" id="C4N-E8-pz3"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="300.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AHEPAHellasWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="AHEPAHellasWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--News Interface Controller-->
+        <scene sceneID="fjm-aO-zzA">
+            <objects>
+                <controller id="0wC-F0-9EU" customClass="AHEPANewsInterfaceController" customModule="AHEPAHellasWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="xSs-dT-1Kz">
+                            <items>
+                                <tableRow identifier="cell" id="yai-Tj-E7L" customClass="AHEPARow" customModule="AHEPAHellasWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="40" alignment="left" id="dhE-tj-6n6">
+                                        <items>
+                                            <label width="160" height="72" alignment="left" text="Label" numberOfLines="3" id="K3b-Kl-RGs">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblDescription" destination="K3b-Kl-RGs" id="gct-Bn-uWb"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="xSs-dT-1Kz" id="ZbP-sG-LsQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="246" y="-33"/>
+        </scene>
+        <!--Find Us-->
+        <scene sceneID="6Hs-Mf-aEi">
+            <objects>
+                <controller id="Qwq-z0-x3F" customClass="AHEPAFindUs" customModule="AHEPAHellasWatch_WatchKit_Extension">
+                    <items>
+                        <map width="1" height="100" alignment="left" id="JNy-jG-DEx"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="JNy-jG-DEx" id="IPh-aU-mOa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-217" y="-50"/>
+        </scene>
+        <!--Chapters-->
+        <scene sceneID="RfP-dV-kgz">
+            <objects>
+                <controller id="Ayu-j7-Z1V" customClass="AHEPAChapters" customModule="AHEPAHellasWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Uyg-j1-mcN">
+                            <items>
+                                <tableRow identifier="cell" id="ZdD-Sj-Own" customClass="AHEPAChapterRow" customModule="AHEPAHellasWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Msy-o9-x0g">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="3" id="cZ4-PB-U5G">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblDescription" destination="cZ4-PB-U5G" id="bhe-hy-9II"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Uyg-j1-mcN" id="SEB-5f-HG7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="233" y="-339"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="WD9-bN-sbH">
+            <objects>
+                <controller id="Kd7-qe-YxL" customClass="AHEPAHistory" customModule="AHEPAHellasWatch_WatchKit_Extension">
+                    <items>
+                        <movie width="1" height="100" alignment="left" id="Nh9-nr-5aW"/>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="Nh9-nr-5aW" id="tm4-iv-lAW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="455" y="-8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ahepalogo" width="208" height="255"/>
+        <image name="background" width="1024" height="640"/>
+    </resources>
+</document>
